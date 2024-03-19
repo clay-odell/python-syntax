@@ -1,4 +1,6 @@
-list = ["this", "is", "the", "theme", "to", "gary's", "show"]
+#deleted orignial list
+def print_upper_words(words):
+    for word in words:
+        print(word.upper())
 
-for word in list:
-    print(word.upper())
+print_upper_words(['everybody', 'hurts', 'sometimes'])
