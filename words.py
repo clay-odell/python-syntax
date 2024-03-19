@@ -1,7 +1,9 @@
 #deleted orignial list
-def print_upper_words(words):
+def print_upper_words(words, must_start_with):
     for word in words:
-        if word.startswith(('e', 'E')):
+        if word[0].lower() in must_start_with:
             print(word.upper())
-print_upper_words(['everybody', 'hurts', 'sometimes'])
-print_upper_words(['everybody', 'Eats', 'eggs', 'each', 'and', 'Every', ''])
+# this should print "HELLO", "HEY", "YO", and "YES"
+
+print_upper_words(["hello", "hey", "goodbye", "yo", "yes"],
+                   must_start_with={"h", "y"})
